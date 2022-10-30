@@ -1,0 +1,9 @@
+Graphics
+- Slightly easier visibility for hyperlanes
+
+Galaxy Generation
+- Small empty core for easier compatability TO DO
+
+Other
+- Integrate Wild Space: Control (Fortresses / gateways / techs etc)
+- 

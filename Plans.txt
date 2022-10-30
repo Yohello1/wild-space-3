@@ -1,0 +1,10 @@
+- Further tweaks to Galaxy Generation / test re-introduction of v small core for easy compatability with Gigas and other mods adding core. 
+- Namelist for Wild Space systems (requires custom star "class")
+- Sensor stations for Wild Space? Potentially irrelevant with mid/late game fortresses and sensor rework
+- Deepen sensor rework (+ make optional in mod menu)
+- Extra-galactic cluster content
+- Unstable / moving hyperlanes (have to be optional, too much lag on big maps)
+- Advanced start (optional in mod menu)
+- Hyperlane anomalies / associated content / mini crisis
+- Mechanic to "control" Wild Space from adjacent starbase (locked behind a 'breakthrough' technology).
+- Updates to mod menu

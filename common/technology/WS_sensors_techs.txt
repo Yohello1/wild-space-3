@@ -1,0 +1,200 @@
+
+
+tech_WS_sensors_wormhole = {
+	cost = @tier4cost2
+	area = physics
+	tier = 4
+	category = { particles }
+	is_rare = yes
+	is_reverse_engineerable = no
+	weight = @tier4weight2
+	prerequisites = { "tech_wormhole_stabilization" }
+	
+	modifier = {
+		#show_only_custom_tooltip = yes
+		custom_tooltip = tech_WS_sensors_wormhole_small
+	}
+
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 1.25
+			has_tradition = tr_discovery_adopt
+		}
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+		modifier = {
+			factor = 0
+			NOR = {
+				has_seen_any_bypass = wormhole
+				any_relation = {
+					is_country_type = default
+					has_communications = ROOT
+					has_technology = tech_wormhole_stabilization
+				}
+			}
+		}
+		modifier = {
+			factor = 4
+			owns_any_bypass = wormhole
+		}
+	}
+
+	ai_weight = {
+		factor = 0.5 # Somewhat niche for the cost.
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+		modifier = {
+			factor = 4
+			owns_any_bypass = wormhole
+		}
+	}
+}
+
+tech_WS_sensors_nebula_1 = {
+	cost = @tier5cost2
+	area = physics
+	tier = 5
+	category = { particles }
+	is_rare = yes
+	is_reverse_engineerable = no
+	weight = @tier5weight3
+	prerequisites = { "tech_sensors_4" "tech_WS_sensors_wormhole" }
+	
+	modifier = {
+		#show_only_custom_tooltip = yes
+		custom_tooltip = tech_WS_sensors_nebula_1_small
+	}
+
+	weight_modifier = {
+		factor = 0.1
+		modifier = {
+			factor = 0.1
+			NOR = {
+				research_leader = {
+					area = physics
+					has_trait = "leader_trait_expertise_particles"
+				}
+				research_leader = {
+					area = physics
+					has_trait = "leader_trait_curator"
+				}
+				research_leader = {
+					area = physics
+					has_trait = "leader_trait_spark_of_genius"
+				}
+				research_leader = {
+					area = physics
+					has_trait = "leader_trait_maniacal"
+				}
+			}
+		}
+		modifier = {
+			factor = 1.25
+			has_tradition = tr_discovery_adopt
+		}
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 0.1 # Somewhat niche for the cost.
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+}
+
+tech_WS_sensors_nebula_2 = {
+	cost = @tier5cost3
+	area = physics
+	tier = 5
+	category = { particles }
+	is_rare = yes
+	is_reverse_engineerable = no
+	weight = @tier5weight3
+	prerequisites = { "tech_WS_sensors_nebula_1" }
+	
+	modifier = {
+		#show_only_custom_tooltip = yes
+		custom_tooltip = tech_WS_sensors_nebula_2_small
+	}
+
+	weight_modifier = {
+		factor = 0.1
+		modifier = {
+			factor = 0.1
+			NOR = {
+				research_leader = {
+					area = physics
+					has_trait = "leader_trait_expertise_particles"
+				}
+				research_leader = {
+					area = physics
+					has_trait = "leader_trait_curator"
+				}
+				research_leader = {
+					area = physics
+					has_trait = "leader_trait_spark_of_genius"
+				}
+				research_leader = {
+					area = physics
+					has_trait = "leader_trait_maniacal"
+				}
+			}
+		}
+		modifier = {
+			factor = 1.25
+			has_tradition = tr_discovery_adopt
+		}
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 0.1 # Somewhat niche for the cost.
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+}

@@ -1,0 +1,42 @@
+# namespace WS_shifting_lanes
+
+# ### shifting the hyperlanes around time to time
+
+# event = {
+# 	id = WS_shifting_lanes.01
+# 	is_triggered_only = yes
+# 	hide_window = yes
+
+# 	immediate = {
+# 		every_system = {
+# 			limit = {
+# 				is_star_class = sc_dn
+# 			}
+
+# 			random_neighbor_system = {
+# 				limit = {
+# 					has_hyperlane_to = PREV
+# 				}
+
+# 				remove_hyperlane = {
+# 					from = PREV
+# 					to = THIS
+# 				}
+
+# 			}
+
+# 			random_neighbor_system_euclidean = {
+# 				limit = {
+# 					NOT = {
+# 						has_hyperlane_to = PREV
+# 					}
+# 				}
+
+# 				add_hyperlane = {
+# 					from = THIS
+# 					to = PREV
+# 				}
+# 			}
+# 		}
+# 	}
+# }
