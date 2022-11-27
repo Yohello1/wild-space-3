@@ -1,9 +1,9 @@
-version="0.1"
+version="3.*"
 tags={
-	"Fixes"
 	"Galaxy Generation"
 	"Gameplay"
+	"Graphics"
 }
-name="Wild Space 3 patched"
+name="Wild Space 3 Patched"
 supported_version="3.*"
 remote_file_id="2860980668"

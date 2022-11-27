@@ -1,5 +1,5 @@
 setup_scenario = {
-	name = "Massive (1250 - Linked Nebula)"
+	name = "Massive"
 	priority = 15					#priority decides in which order the scenarios are listed
 	num_stars = 1250
 	radius = 480					#should be less than 500, preferably less than ~460
@@ -59,6 +59,12 @@ setup_scenario = {
 	
 	supports_shape = elliptical
 	supports_shape = spiral_2
+	supports_shape = spiral_3
 	supports_shape = spiral_4
+	supports_shape = spiral_6
 	supports_shape = ring
+	supports_shape = bar
+	supports_shape = starburst
+	supports_shape = cartwheel
+	supports_shape = spoked
 }

@@ -1,5 +1,5 @@
 setup_scenario = {
-	name = "Large (Wild Space)"
+	name = "Large Wild"
 	priority = 12					#priority decides in which order the scenarios are listed
 	num_stars = 800
 	radius = 450					#should be less than 500, preferably less than ~460
@@ -56,9 +56,15 @@ setup_scenario = {
 	num_gateways_default = 1
 	num_hyperlanes = { min=0.5 max= 3 }
 	num_hyperlanes_default = 1
-
+	
 	supports_shape = elliptical
 	supports_shape = spiral_2
+	supports_shape = spiral_3
 	supports_shape = spiral_4
+	supports_shape = spiral_6
 	supports_shape = ring
+	supports_shape = bar
+	supports_shape = starburst
+	supports_shape = cartwheel
+	supports_shape = spoked
 }

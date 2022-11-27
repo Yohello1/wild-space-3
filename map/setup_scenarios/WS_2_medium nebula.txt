@@ -1,5 +1,5 @@
 setup_scenario = {
-	name = "Medium (Wild Space)"
+	name = "Medium Wild"
 	priority = 11					#priority decides in which order the scenarios are listed
 	default = yes
 	num_stars = 600
@@ -60,6 +60,11 @@ setup_scenario = {
 	
 	supports_shape = elliptical
 	supports_shape = spiral_2
+	supports_shape = spiral_3
 	supports_shape = spiral_4
 	supports_shape = ring
+	supports_shape = bar
+	supports_shape = starburst
+	supports_shape = cartwheel
+	supports_shape = spoked
 }

@@ -5,9 +5,17 @@
  WS_menu_update:0 "Updates"
  WS_menu.1.nebula_performance_option:0 "Disable nebula system art (may improve performance)"
  WS_menu.1.nebula_default_option:0 "Enable nebula system art"
+
+ WS_menu.1.shifting_lanes_performance:0 "Disable shifting lanes (may improve performance)"
+ WS_menu.1.shifting_lanes_dynamic:0 "Enable shifting lanes"
+
  WS_menu.1.core_immediate_option:0 "Trigger Gigastructure core from start (Black Hole only)"
  WS_menu.1.core_default_option:0 "Revert to default Gigastructures behaviour"
- 
+
+ WS_menu.4.title:0 "Dynamic/Shifting lanes"
+ WS_menu.4.desc:0 "On galaxies with >500 having shifting lanes enabled is detrimental to performance. Note:This will only fire once, and only for the host of the multi-player game."
+
+
  WS_menu_start:0 "Start Game"
 
  WS_menu.2.title:0 "Wild Space Updates"

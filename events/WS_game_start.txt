@@ -10,6 +10,9 @@ event = {
 		set_global_flag = has_wild_space_mod
 		set_global_flag = WS_nebula_default
 		set_global_flag = WS_gigastructures_core_default 
+		set_global_flag = WS_shifting_lanes_dynamic
+		set_global_flag = WS_host_not_found
+
 		}
 }
 
@@ -28,6 +31,7 @@ country_event = {
 			id = WS_menu.1
 			days = -1
 		}
+
 		every_country = { set_variable = { which = WS_fortress_cap value = 5 } }
 
 		every_system = { 
@@ -39,12 +43,56 @@ country_event = {
 			else = { set_star_flag = deep_ws_system }	
 		}
 	}
+
 }
 
+# Shifting lanes
+country_event = {
+	id = wild_space.05
+	title = "WS_menu.4.title"
+	desc = "WS_menu.4.desc"
+	picture = GFX_evt_WS_menu
+	fire_only_once = yes
+	# hide_window = yes
+	is_triggered_only = yes
 
+	trigger = {
+		has_global_flag = WS_host_not_found
+		is_ai = no
+	}
+	##Shifting lanes
+	# disable dynamic lanes
+	immediate = {
+		remove_global_flag = WS_host_not_found
+	}
+	
+	option = {
+
+		name = "WS_menu.1.shifting_lanes_performance"
+		remove_global_flag = shifting_lanes_dynamic
+		remove_global_flag = WS_host_not_found
+		set_global_flag = shifting_lanes_performance
+		hidden_effect = {
+
+		}
+	}
+
+
+	# enable dynamic lanes
+	option = {
+
+		name = "WS_menu.1.shifting_lanes_dynamic"
+		remove_global_flag = shifting_lanes_performance
+		remove_global_flag = WS_host_not_found
+		set_global_flag = shifting_lanes_dynamic
+		hidden_effect = {
+
+		}
+	}
+}
 
 #
-#######################################################################################
+##############################################################################################
 #### adds additional hyperlanes to Wild Space systems to improve connectivity of "oceans" ####
 event = {
 	id = wild_space.03
