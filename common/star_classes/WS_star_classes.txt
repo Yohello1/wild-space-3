@@ -41,8 +41,12 @@ random_list = {
 		"sc_m_giant"
 		"sc_m_super"
 		"sc_m_hyper"
-		"sc_strange_star"
-		"sc_white_hole"
-		"sc_dark_star"
+		# "sc_strange_star"
+		# "sc_white_hole"
+		# "sc_dark_star"
+		
+		
 	}
+
+	
 }
