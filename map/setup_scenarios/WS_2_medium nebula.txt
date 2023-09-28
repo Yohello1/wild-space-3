@@ -1,5 +1,5 @@
 setup_scenario = {
-	name = "Medium Wild"
+	name = "MediumWild"
 	priority = 11					#priority decides in which order the scenarios are listed
 	default = yes
 	num_stars = 600

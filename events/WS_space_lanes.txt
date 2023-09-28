@@ -57,7 +57,7 @@ event = {
 					remove_megastructure = this
 				}
 		
-				set_asteroid_belt = { radius = 0 }				
+							
 				
 			}	
 
@@ -111,7 +111,7 @@ event = {
 							remove_megastructure = this
 						}
 				
-						set_asteroid_belt = { radius = 0 }				
+						# set_asteroid_belt = { radius = 0 }				
 				
 					}
 
@@ -149,7 +149,7 @@ event = {
 								remove_megastructure = this
 							}
 					
-							set_asteroid_belt = { radius = 0 }				
+							# set_asteroid_belt = { radius = 0 }				
 					
 						}	
 					}		

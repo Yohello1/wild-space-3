@@ -1,5 +1,5 @@
 setup_scenario = {
-	name = "Medium Wild"
+	name = "HugeWild"
 	priority = 13					#priority decides in which order the scenarios are listed
 	num_stars = 1000
 	radius = 450					#should be less than 500, preferably less than ~460

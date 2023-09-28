@@ -27,7 +27,7 @@ ws_special_init_1 = {
 	planet = {
 		class = "pc_dn_star"
 		orbit_distance = 0
-		size = { min = @standard_min max = @standard_max }	
+		size = { min = 0 max = 0 }	
 		init_effect = {
 				create_wild_space_effect_A = yes
 				prevent_anomaly = yes 
@@ -65,7 +65,7 @@ ws_special_init_2 = {
 	planet = {
 		class = "pc_dn_star"
 		orbit_distance = 0
-		size = { min = @standard_min max = @standard_max }	
+		size = { min = 0 max = 0 }	
 		init_effect = {
 				create_wild_space_effect_1 = yes 
 				prevent_anomaly = yes 
@@ -107,7 +107,7 @@ ws_special_init_4 = {
 	planet = {
 		class = "pc_dn_star"
 		orbit_distance = 0
-		size = { min = @standard_min max = @standard_max }	
+		size = { min = 0 max = 0 }	
 		init_effect = {
 				prevent_anomaly = yes 
 				clear_planet_modifiers = yes		
@@ -246,7 +246,7 @@ ws_special_init_5 = {
 	planet = {
 		class = "pc_dn_star"
 		orbit_distance = 0
-		size = { min = @standard_min max = @standard_max }	
+		size = { min = 0 max = 0 }	
 		init_effect = {
 				prevent_anomaly = yes 
 				clear_planet_modifiers = yes		
@@ -317,7 +317,7 @@ ws_special_init_6 = {
 	planet = {
 		class = "pc_dn_star"
 		orbit_distance = 0
-		size = { min = @standard_min max = @standard_max }	
+		size = { min = 0 max = 0 }	
 		init_effect = {
 				create_wild_space_effect_1 = yes 
 				#create_wild_space_effect_3 = yes
@@ -376,7 +376,7 @@ ws_special_init_7 = {
 	planet = {
 		class = star
 		orbit_distance = 0
-		size = { min = @standard_min max = @standard_max }
+		size = { min = 0 max = 0 }
 		init_effect = {
 				create_wild_space_effect_1 = yes 
 				#create_wild_space_effect_2 = yes 
@@ -537,585 +537,585 @@ ws_special_init_7 = {
 	}
 }
 
-ws_special_init_8 = {
-    class = "rl_trinary_stars"
-	name = "Vibra"
+# ws_special_init_8 = {
+#     class = "rl_trinary_stars"
+# 	name = "Vibra"
 	
-    usage = misc_system_init
-	usage_odds = {
-		base = 0
-		modifier = {
-			add = 1000
-			is_inside_nebula = yes
-		}	
-		modifier = {
-			factor = 0
-			has_star_flag = empire_cluster
-		}
-		modifier = {
-			factor = 0
-			any_neighbor_system = {
-				#ignore_hyperlanes = yes
-				NOT = {is_star_class = sc_dn}
-				any_neighbor_system = {
-					#ignore_hyperlanes = yes
-					NOT = {is_star_class = sc_dn}
-				}
-			}
-		}		
-	}
-	max_instances = 1
+#     usage = misc_system_init
+# 	usage_odds = {
+# 		base = 0
+# 		modifier = {
+# 			add = 1000
+# 			is_inside_nebula = yes
+# 		}	
+# 		modifier = {
+# 			factor = 0
+# 			has_star_flag = empire_cluster
+# 		}
+# 		modifier = {
+# 			factor = 0
+# 			any_neighbor_system = {
+# 				#ignore_hyperlanes = yes
+# 				NOT = {is_star_class = sc_dn}
+# 				any_neighbor_system = {
+# 					#ignore_hyperlanes = yes
+# 					NOT = {is_star_class = sc_dn}
+# 				}
+# 			}
+# 		}		
+# 	}
+# 	max_instances = 1
 
-	flags = { misc_system }
+# 	flags = { misc_system }
 	
-    planet = {
-        count = 1
-        class = star
-        orbit_distance = 0
-        orbit_angle = 0
-        size = { min = @standard_min max = @standard_max }
-        has_ring = no
-		init_effect = {
-				}		
-	}
+#     planet = {
+#         count = 1
+#         class = star
+#         orbit_distance = 0
+#         orbit_angle = 0
+#         size = { min = 0 max = 0 }
+#         has_ring = no
+# 		init_effect = {
+# 				}		
+# 	}
 
-    change_orbit = { min = 20 max = 60 }
+#     change_orbit = { min = 20 max = 60 }
     
-    planet = {
-        count = 1
-        orbit_distance = { min = 15 max = 20 }
-        orbit_angle = { min = 90 max = 270 }
-		flags = { hot_zone }
+#     planet = {
+#         count = 1
+#         orbit_distance = { min = 15 max = 20 }
+#         orbit_angle = { min = 90 max = 270 }
+# 		flags = { hot_zone }
         
-        change_orbit = @base_moon_distance
+#         change_orbit = @base_moon_distance
         
-        moon = {
-            count = { min = 0 max = 1 }
-            orbit_angle = { min = 90 max = 270 }
-            orbit_distance = 5
-			flags = { hot_zone }
-        }
-    }
+#         moon = {
+#             count = { min = 0 max = 1 }
+#             orbit_angle = { min = 90 max = 270 }
+#             orbit_distance = 5
+# 			flags = { hot_zone }
+#         }
+#     }
 	
-	planet = {
-        count = 1
-        orbit_distance = { min = 20 max = 25 }
-        orbit_angle = { min = 90 max = 270 }
-		flags = { warm_zone }
+# 	planet = {
+#         count = 1
+#         orbit_distance = { min = 20 max = 25 }
+#         orbit_angle = { min = 90 max = 270 }
+# 		flags = { warm_zone }
         
-        change_orbit = @base_moon_distance
+#         change_orbit = @base_moon_distance
         
-        moon = {
-            count = { min = 0 max = 1 }
-            orbit_angle = { min = 90 max = 270 }
-            orbit_distance = 5
-        }
-    }
+#         moon = {
+#             count = { min = 0 max = 1 }
+#             orbit_angle = { min = 90 max = 270 }
+#             orbit_distance = 5
+#         }
+#     }
 	
-	planet = {
-        count = 1
-        orbit_distance = { min = 25 max = 30 }
-        orbit_angle = { min = 90 max = 270 }
+# 	planet = {
+#         count = 1
+#         orbit_distance = { min = 25 max = 30 }
+#         orbit_angle = { min = 90 max = 270 }
         
-        change_orbit = @base_moon_distance
+#         change_orbit = @base_moon_distance
         
-        moon = {
-            count = { min = 0 max = 1 }
-            orbit_angle = { min = 90 max = 270 }
-            orbit_distance = 5
-        }
-    }
+#         moon = {
+#             count = { min = 0 max = 1 }
+#             orbit_angle = { min = 90 max = 270 }
+#             orbit_distance = 5
+#         }
+#     }
 	
-	planet = {
-        count = { min = 0 max = 1 }
-        orbit_distance = { min = 30 max = 35 }
-        orbit_angle = { min = 90 max = 270 }
+# 	planet = {
+#         count = { min = 0 max = 1 }
+#         orbit_distance = { min = 30 max = 35 }
+#         orbit_angle = { min = 90 max = 270 }
         
-        change_orbit = @base_moon_distance
+#         change_orbit = @base_moon_distance
         
-        moon = {
-            count = { min = 0 max = 1 }
-            orbit_angle = { min = 90 max = 270 }
-            orbit_distance = 5
-        }
-    }
+#         moon = {
+#             count = { min = 0 max = 1 }
+#             orbit_angle = { min = 90 max = 270 }
+#             orbit_distance = 5
+#         }
+#     }
 	
-	planet = {
-		class = "pc_gas_giant"
-		count = 1
-        orbit_distance = { min = 35 max = 40 }
-        orbit_angle = { min = 90 max = 270 }
+# 	planet = {
+# 		class = "pc_gas_giant"
+# 		count = 1
+#         orbit_distance = { min = 35 max = 40 }
+#         orbit_angle = { min = 90 max = 270 }
 
-		change_orbit = @base_moon_distance
+# 		change_orbit = @base_moon_distance
         
-		moon = {
-			count = 1
-			orbit_angle = { min = 90 max = 270 }
-			class = "pc_gaia"
-			orbit_distance = 12
-			size = { min = 6 max = 18 }
-			init_effect = {
-				prevent_anomaly = yes
-				generate_late_primitives_on_planet = yes
-			}	
-		}
-		moon = {
-			count = 1
-			orbit_angle = { min = 90 max = 270 }
-			class = "pc_gaia"
-			orbit_distance = 9
-			size = { min = 15 max = 25 }
-			init_effect = {
-				prevent_anomaly = yes
-				generate_late_primitives_on_planet = yes
-			}	
-		}
+# 		moon = {
+# 			count = 1
+# 			orbit_angle = { min = 90 max = 270 }
+# 			class = "pc_gaia"
+# 			orbit_distance = 12
+# 			size = { min = 6 max = 18 }
+# 			init_effect = {
+# 				prevent_anomaly = yes
+# 				generate_late_primitives_on_planet = yes
+# 			}	
+# 		}
+# 		moon = {
+# 			count = 1
+# 			orbit_angle = { min = 90 max = 270 }
+# 			class = "pc_gaia"
+# 			orbit_distance = 9
+# 			size = { min = 15 max = 25 }
+# 			init_effect = {
+# 				prevent_anomaly = yes
+# 				generate_late_primitives_on_planet = yes
+# 			}	
+# 		}
 		
-		init_effect = {
-			prevent_anomaly = yes
-			add_deposit = d_alloys_5 
-			add_deposit = d_exotic_gases_3
-		}
-	}
+# 		init_effect = {
+# 			prevent_anomaly = yes
+# 			add_deposit = d_alloys_5 
+# 			add_deposit = d_exotic_gases_3
+# 		}
+# 	}
 	
-	planet = {
-		count = 1
-		class = star
-		orbit_distance = { min = 160 max = 260 }
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = @standard_sat_min max = @standard_sat_max }
-		has_ring = no
-		satellite_naming_policy = upper_case_roman_numerals
+# 	planet = {
+# 		count = 1
+# 		class = star
+# 		orbit_distance = { min = 160 max = 260 }
+# 		orbit_angle = { min = 90 max = 270 }
+# 		size = { min = @standard_sat_min max = @standard_sat_max }
+# 		has_ring = no
+# 		satellite_naming_policy = upper_case_roman_numerals
 		
-		change_orbit = 30
+# 		change_orbit = 30
 
-		planet = {
-			count = 1
-			orbit_angle = { min = 90 max = 270 }
-			orbit_distance = { min = 15 max = 20 }
-			satellite_naming_policy = lower_case_latin_letters
-			flags = { hot_zone }
+# 		planet = {
+# 			count = 1
+# 			orbit_angle = { min = 90 max = 270 }
+# 			orbit_distance = { min = 15 max = 20 }
+# 			satellite_naming_policy = lower_case_latin_letters
+# 			flags = { hot_zone }
 
-			change_orbit = @base_moon_distance
+# 			change_orbit = @base_moon_distance
 
-			moon = {
-				count = { min = 0 max = 1 }
-				orbit_angle = { min = 90 max = 270 }
-				orbit_distance = 5
-				flags = { hot_zone }
-			}
-		}
+# 			moon = {
+# 				count = { min = 0 max = 1 }
+# 				orbit_angle = { min = 90 max = 270 }
+# 				orbit_distance = 5
+# 				flags = { hot_zone }
+# 			}
+# 		}
 		
-		planet = {
-			count = 1
-			orbit_angle = { min = 90 max = 270 }
-			orbit_distance = { min = 20 max = 25 }
-			satellite_naming_policy = lower_case_latin_letters
+# 		planet = {
+# 			count = 1
+# 			orbit_angle = { min = 90 max = 270 }
+# 			orbit_distance = { min = 20 max = 25 }
+# 			satellite_naming_policy = lower_case_latin_letters
 
-			change_orbit = @base_moon_distance
+# 			change_orbit = @base_moon_distance
 
-			moon = {
-				count = { min = 0 max = 1 }
-				orbit_angle = { min = 90 max = 270 }
-				orbit_distance = 5
-			}
-		}
+# 			moon = {
+# 				count = { min = 0 max = 1 }
+# 				orbit_angle = { min = 90 max = 270 }
+# 				orbit_distance = 5
+# 			}
+# 		}
 		
-		planet = {
-			count = { min = 0 max = 1 }
-			orbit_angle = { min = 90 max = 270 }
-			orbit_distance = { min = 25 max = 30 }
-			satellite_naming_policy = lower_case_latin_letters
+# 		planet = {
+# 			count = { min = 0 max = 1 }
+# 			orbit_angle = { min = 90 max = 270 }
+# 			orbit_distance = { min = 25 max = 30 }
+# 			satellite_naming_policy = lower_case_latin_letters
 
-			change_orbit = @base_moon_distance
+# 			change_orbit = @base_moon_distance
 
-			moon = {
-				count = { min = 0 max = 1 }
-				orbit_angle = { min = 90 max = 270 }
-				orbit_distance = 5
-			}
-		}
+# 			moon = {
+# 				count = { min = 0 max = 1 }
+# 				orbit_angle = { min = 90 max = 270 }
+# 				orbit_distance = 5
+# 			}
+# 		}
 		
-		planet = {
-			count = { min = 0 max = 1 }
-			orbit_angle = { min = 90 max = 270 }
-			orbit_distance = { min = 30 max = 35 }
-			satellite_naming_policy = lower_case_latin_letters
+# 		planet = {
+# 			count = { min = 0 max = 1 }
+# 			orbit_angle = { min = 90 max = 270 }
+# 			orbit_distance = { min = 30 max = 35 }
+# 			satellite_naming_policy = lower_case_latin_letters
 
-			change_orbit = @base_moon_distance
+# 			change_orbit = @base_moon_distance
 
-			moon = {
-				count = { min = 0 max = 1 }
-				orbit_angle = { min = 90 max = 270 }
-				orbit_distance = 5
-			}
-		}
-	}
+# 			moon = {
+# 				count = { min = 0 max = 1 }
+# 				orbit_angle = { min = 90 max = 270 }
+# 				orbit_distance = 5
+# 			}
+# 		}
+# 	}
 
-	planet = {
-		count = 1
-		class = star
-		orbit_distance = 0
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = @standard_sat_min max = @standard_sat_max }
-		has_ring = no
-		satellite_naming_policy = upper_case_roman_numerals
+# 	planet = {
+# 		count = 1
+# 		class = star
+# 		orbit_distance = 0
+# 		orbit_angle = { min = 90 max = 270 }
+# 		size = { min = @standard_sat_min max = @standard_sat_max }
+# 		has_ring = no
+# 		satellite_naming_policy = upper_case_roman_numerals
 		
-		change_orbit = 30
+# 		change_orbit = 30
 
-		planet = {
-			count = 1
-			orbit_angle = { min = 90 max = 270 }
-			orbit_distance = { min = 15 max = 20 }
-			satellite_naming_policy = lower_case_latin_letters
-			flags = { hot_zone }
+# 		planet = {
+# 			count = 1
+# 			orbit_angle = { min = 90 max = 270 }
+# 			orbit_distance = { min = 15 max = 20 }
+# 			satellite_naming_policy = lower_case_latin_letters
+# 			flags = { hot_zone }
 
-			change_orbit = @base_moon_distance
+# 			change_orbit = @base_moon_distance
 
-			moon = {
-				count = { min = 0 max = 1 }
-				orbit_angle = { min = 90 max = 270 }
-				orbit_distance = 5
-				flags = { hot_zone }
-			}
-		}
+# 			moon = {
+# 				count = { min = 0 max = 1 }
+# 				orbit_angle = { min = 90 max = 270 }
+# 				orbit_distance = 5
+# 				flags = { hot_zone }
+# 			}
+# 		}
 		
-		planet = {
-			count = { min = 0 max = 1 }
-			orbit_angle = { min = 90 max = 270 }
-			orbit_distance = { min = 20 max = 25 }
-			satellite_naming_policy = lower_case_latin_letters
+# 		planet = {
+# 			count = { min = 0 max = 1 }
+# 			orbit_angle = { min = 90 max = 270 }
+# 			orbit_distance = { min = 20 max = 25 }
+# 			satellite_naming_policy = lower_case_latin_letters
 
-			change_orbit = @base_moon_distance
+# 			change_orbit = @base_moon_distance
 
-			moon = {
-				count = { min = 0 max = 1 }
-				orbit_angle = { min = 90 max = 270 }
-				orbit_distance = 5
-			}
-		}
+# 			moon = {
+# 				count = { min = 0 max = 1 }
+# 				orbit_angle = { min = 90 max = 270 }
+# 				orbit_distance = 5
+# 			}
+# 		}
 		
-		planet = {
-			count = { min = 0 max = 1 }
-			orbit_angle = { min = 90 max = 270 }
-			orbit_distance = { min = 25 max = 30 }
-			satellite_naming_policy = lower_case_latin_letters
+# 		planet = {
+# 			count = { min = 0 max = 1 }
+# 			orbit_angle = { min = 90 max = 270 }
+# 			orbit_distance = { min = 25 max = 30 }
+# 			satellite_naming_policy = lower_case_latin_letters
 
-			change_orbit = @base_moon_distance
+# 			change_orbit = @base_moon_distance
 
-			moon = {
-				count = { min = 0 max = 1 }
-				orbit_angle = { min = 90 max = 270 }
-				orbit_distance = 5
-			}
-		}
+# 			moon = {
+# 				count = { min = 0 max = 1 }
+# 				orbit_angle = { min = 90 max = 270 }
+# 				orbit_distance = 5
+# 			}
+# 		}
 		
-		planet = {
-			count = { min = 0 max = 1 }
-			orbit_angle = { min = 90 max = 270 }
-			orbit_distance = { min = 30 max = 35 }
-			satellite_naming_policy = lower_case_latin_letters
+# 		planet = {
+# 			count = { min = 0 max = 1 }
+# 			orbit_angle = { min = 90 max = 270 }
+# 			orbit_distance = { min = 30 max = 35 }
+# 			satellite_naming_policy = lower_case_latin_letters
 
-			change_orbit = @base_moon_distance
+# 			change_orbit = @base_moon_distance
 
-			moon = {
-				count = { min = 0 max = 1 }
-				orbit_angle = { min = 90 max = 270 }
-				orbit_distance = 5
-			}
-		}
-    }
-}
+# 			moon = {
+# 				count = { min = 0 max = 1 }
+# 				orbit_angle = { min = 90 max = 270 }
+# 				orbit_distance = 5
+# 			}
+# 		}
+#     }
+# }
 
 ###Trinary system - Islands
 
-ws_special_init_9 = {
-    class = "rl_trinary_stars"
+# ws_special_init_9 = {
+#     class = "rl_trinary_stars"
     
-    usage = misc_system_init
-	usage_odds = {
-		base = 0
-		modifier = {
-			add = 1000
-			is_inside_nebula = yes
-		}	
-		modifier = {
-			factor = 0
-			has_star_flag = empire_cluster
-		}
-		modifier = {
-			factor = 0
-			any_neighbor_system = {
-				#ignore_hyperlanes = yes
-				NOT = {is_star_class = sc_dn}
-				any_neighbor_system = {
-					#ignore_hyperlanes = yes
-					NOT = {is_star_class = sc_dn}
-				}
-			}
-		}		
-	}
-	max_instances = 5
+#     usage = misc_system_init
+# 	usage_odds = {
+# 		base = 0
+# 		modifier = {
+# 			add = 1000
+# 			is_inside_nebula = yes
+# 		}	
+# 		modifier = {
+# 			factor = 0
+# 			has_star_flag = empire_cluster
+# 		}
+# 		modifier = {
+# 			factor = 0
+# 			any_neighbor_system = {
+# 				#ignore_hyperlanes = yes
+# 				NOT = {is_star_class = sc_dn}
+# 				any_neighbor_system = {
+# 					#ignore_hyperlanes = yes
+# 					NOT = {is_star_class = sc_dn}
+# 				}
+# 			}
+# 		}		
+# 	}
+# 	max_instances = 5
 
-	flags = { misc_system }
+# 	flags = { misc_system }
 	
-    planet = {
-        count = 1
-        class = star
-        orbit_distance = 0
-        orbit_angle = 0
-        size = { min = @standard_min max = @standard_max }
-        has_ring = no
-		init_effect = {
-				create_wild_space_effect_1 = yes 		
-				#create_wild_space_effect_2 = yes 
-				}		
-	}
+#     planet = {
+#         count = 1
+#         class = star
+#         orbit_distance = 0
+#         orbit_angle = 0
+#         size = { min = 0 max = 0 }
+#         has_ring = no
+# 		init_effect = {
+# 				create_wild_space_effect_1 = yes 		
+# 				#create_wild_space_effect_2 = yes 
+# 				}		
+# 	}
 
-    change_orbit = { min = 20 max = 60 }
+#     change_orbit = { min = 20 max = 60 }
     
-    planet = {
-        count = 1
-        orbit_distance = { min = 15 max = 20 }
-        orbit_angle = { min = 90 max = 270 }
-		flags = { hot_zone }
+#     planet = {
+#         count = 1
+#         orbit_distance = { min = 15 max = 20 }
+#         orbit_angle = { min = 90 max = 270 }
+# 		flags = { hot_zone }
         
-        change_orbit = @base_moon_distance
+#         change_orbit = @base_moon_distance
         
-        moon = {
-            count = { min = 0 max = 1 }
-            orbit_angle = { min = 90 max = 270 }
-            orbit_distance = 5
-			flags = { hot_zone }
-        }
-    }
+#         moon = {
+#             count = { min = 0 max = 1 }
+#             orbit_angle = { min = 90 max = 270 }
+#             orbit_distance = 5
+# 			flags = { hot_zone }
+#         }
+#     }
 	
-	planet = {
-        count = 1
-        orbit_distance = { min = 20 max = 25 }
-        orbit_angle = { min = 90 max = 270 }
-		flags = { warm_zone }
+# 	planet = {
+#         count = 1
+#         orbit_distance = { min = 20 max = 25 }
+#         orbit_angle = { min = 90 max = 270 }
+# 		flags = { warm_zone }
         
-        change_orbit = @base_moon_distance
+#         change_orbit = @base_moon_distance
         
-        moon = {
-            count = { min = 0 max = 1 }
-            orbit_angle = { min = 90 max = 270 }
-            orbit_distance = 5
-        }
-    }
+#         moon = {
+#             count = { min = 0 max = 1 }
+#             orbit_angle = { min = 90 max = 270 }
+#             orbit_distance = 5
+#         }
+#     }
 	
-	planet = {
-        count = 1
-        orbit_distance = { min = 25 max = 30 }
-        orbit_angle = { min = 90 max = 270 }
+# 	planet = {
+#         count = 1
+#         orbit_distance = { min = 25 max = 30 }
+#         orbit_angle = { min = 90 max = 270 }
         
-        change_orbit = @base_moon_distance
+#         change_orbit = @base_moon_distance
         
-        moon = {
-            count = 1
-            orbit_angle = { min = 90 max = 270 }
-            orbit_distance = 5
-			init_effect = {
-				prevent_anomaly = yes
-				add_deposit = d_alloys_5 
-			}
-		}
-    }
+#         moon = {
+#             count = 1
+#             orbit_angle = { min = 90 max = 270 }
+#             orbit_distance = 5
+# 			init_effect = {
+# 				prevent_anomaly = yes
+# 				add_deposit = d_alloys_5 
+# 			}
+# 		}
+#     }
 	
-	planet = {
-        count = { min = 0 max = 1 }
-        orbit_distance = { min = 30 max = 35 }
-        orbit_angle = { min = 90 max = 270 }
+# 	planet = {
+#         count = { min = 0 max = 1 }
+#         orbit_distance = { min = 30 max = 35 }
+#         orbit_angle = { min = 90 max = 270 }
         
-        change_orbit = @base_moon_distance
+#         change_orbit = @base_moon_distance
         
-        moon = {
-            count = { min = 0 max = 1 }
-            orbit_angle = { min = 90 max = 270 }
-            orbit_distance = 5
-		}
+#         moon = {
+#             count = { min = 0 max = 1 }
+#             orbit_angle = { min = 90 max = 270 }
+#             orbit_distance = 5
+# 		}
 		
-		init_effect = {
-			prevent_anomaly = yes
-			add_deposit = d_alloys_2
-		}
-    }
+# 		init_effect = {
+# 			prevent_anomaly = yes
+# 			add_deposit = d_alloys_2
+# 		}
+#     }
 	
-	planet = {
-        count = { min = 0 max = 1 }
-        orbit_distance = { min = 35 max = 40 }
-        orbit_angle = { min = 90 max = 270 }
+# 	planet = {
+#         count = { min = 0 max = 1 }
+#         orbit_distance = { min = 35 max = 40 }
+#         orbit_angle = { min = 90 max = 270 }
         
-        change_orbit = @base_moon_distance
+#         change_orbit = @base_moon_distance
         
-        moon = {
-            count = { min = 0 max = 1 }
-            orbit_angle = { min = 90 max = 270 }
-			orbit_distance = 5
-			init_effect = {
-				prevent_anomaly = yes
-				add_deposit = d_alloys_2
-			}
-        }
-    }
+#         moon = {
+#             count = { min = 0 max = 1 }
+#             orbit_angle = { min = 90 max = 270 }
+# 			orbit_distance = 5
+# 			init_effect = {
+# 				prevent_anomaly = yes
+# 				add_deposit = d_alloys_2
+# 			}
+#         }
+#     }
 	
-	planet = {
-		count = 1
-		class = star
-		orbit_distance = { min = 160 max = 260 }
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = @standard_sat_min max = @standard_sat_max }
-		has_ring = no
-		satellite_naming_policy = upper_case_roman_numerals
+# 	planet = {
+# 		count = 1
+# 		class = star
+# 		orbit_distance = { min = 160 max = 260 }
+# 		orbit_angle = { min = 90 max = 270 }
+# 		size = { min = @standard_sat_min max = @standard_sat_max }
+# 		has_ring = no
+# 		satellite_naming_policy = upper_case_roman_numerals
 
-		change_orbit = 30
+# 		change_orbit = 30
 
-		planet = {
-			count = 1
-			orbit_angle = { min = 90 max = 270 }
-			orbit_distance = { min = 15 max = 20 }
-			satellite_naming_policy = lower_case_latin_letters
-			flags = { hot_zone }
+# 		planet = {
+# 			count = 1
+# 			orbit_angle = { min = 90 max = 270 }
+# 			orbit_distance = { min = 15 max = 20 }
+# 			satellite_naming_policy = lower_case_latin_letters
+# 			flags = { hot_zone }
 
-			change_orbit = @base_moon_distance
+# 			change_orbit = @base_moon_distance
 
-			moon = {
-				count = { min = 0 max = 1 }
-				orbit_angle = { min = 90 max = 270 }
-				orbit_distance = 5
-				flags = { hot_zone }
-				init_effect = {
-					prevent_anomaly = yes
-					add_deposit = d_alloys_2
-				}
-			}
-		}
+# 			moon = {
+# 				count = { min = 0 max = 1 }
+# 				orbit_angle = { min = 90 max = 270 }
+# 				orbit_distance = 5
+# 				flags = { hot_zone }
+# 				init_effect = {
+# 					prevent_anomaly = yes
+# 					add_deposit = d_alloys_2
+# 				}
+# 			}
+# 		}
 		
-		planet = {
-			count = 1
-			orbit_angle = { min = 90 max = 270 }
-			orbit_distance = { min = 20 max = 25 }
-			satellite_naming_policy = lower_case_latin_letters
+# 		planet = {
+# 			count = 1
+# 			orbit_angle = { min = 90 max = 270 }
+# 			orbit_distance = { min = 20 max = 25 }
+# 			satellite_naming_policy = lower_case_latin_letters
 
-			change_orbit = @base_moon_distance
+# 			change_orbit = @base_moon_distance
 
-			moon = {
-				count = { min = 0 max = 1 }
-				orbit_angle = { min = 90 max = 270 }
-				orbit_distance = 5
-			}
-		}
+# 			moon = {
+# 				count = { min = 0 max = 1 }
+# 				orbit_angle = { min = 90 max = 270 }
+# 				orbit_distance = 5
+# 			}
+# 		}
 		
-		planet = {
-			count = { min = 0 max = 1 }
-			orbit_angle = { min = 90 max = 270 }
-			orbit_distance = { min = 25 max = 30 }
-			satellite_naming_policy = lower_case_latin_letters
+# 		planet = {
+# 			count = { min = 0 max = 1 }
+# 			orbit_angle = { min = 90 max = 270 }
+# 			orbit_distance = { min = 25 max = 30 }
+# 			satellite_naming_policy = lower_case_latin_letters
 
-			change_orbit = @base_moon_distance
+# 			change_orbit = @base_moon_distance
 
-			moon = {
-				count = { min = 0 max = 1 }
-				orbit_angle = { min = 90 max = 270 }
-				orbit_distance = 5
-				init_effect = {
-					prevent_anomaly = yes
-					add_deposit = d_alloys_2
-				}
-			}
-		}
+# 			moon = {
+# 				count = { min = 0 max = 1 }
+# 				orbit_angle = { min = 90 max = 270 }
+# 				orbit_distance = 5
+# 				init_effect = {
+# 					prevent_anomaly = yes
+# 					add_deposit = d_alloys_2
+# 				}
+# 			}
+# 		}
 		
-		planet = {
-			count = { min = 0 max = 1 }
-			orbit_angle = { min = 90 max = 270 }
-			orbit_distance = { min = 30 max = 35 }
-			satellite_naming_policy = lower_case_latin_letters
+# 		planet = {
+# 			count = { min = 0 max = 1 }
+# 			orbit_angle = { min = 90 max = 270 }
+# 			orbit_distance = { min = 30 max = 35 }
+# 			satellite_naming_policy = lower_case_latin_letters
 
-			change_orbit = @base_moon_distance
+# 			change_orbit = @base_moon_distance
 
-			moon = {
-				count = { min = 0 max = 1 }
-				orbit_angle = { min = 90 max = 270 }
-				orbit_distance = 5
-			}
-		}
-	}
+# 			moon = {
+# 				count = { min = 0 max = 1 }
+# 				orbit_angle = { min = 90 max = 270 }
+# 				orbit_distance = 5
+# 			}
+# 		}
+# 	}
 
-	planet = {
-		count = 1
-		class = star
-		orbit_distance = 0
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = @standard_sat_min max = @standard_sat_max }
-		has_ring = no
-		satellite_naming_policy = upper_case_roman_numerals
+# 	planet = {
+# 		count = 1
+# 		class = star
+# 		orbit_distance = 0
+# 		orbit_angle = { min = 90 max = 270 }
+# 		size = { min = @standard_sat_min max = @standard_sat_max }
+# 		has_ring = no
+# 		satellite_naming_policy = upper_case_roman_numerals
 
-		change_orbit = 30
+# 		change_orbit = 30
 
-		planet = {
-			count = 1
-			orbit_angle = { min = 90 max = 270 }
-			orbit_distance = { min = 15 max = 20 }
-			satellite_naming_policy = lower_case_latin_letters
-			flags = { hot_zone }
+# 		planet = {
+# 			count = 1
+# 			orbit_angle = { min = 90 max = 270 }
+# 			orbit_distance = { min = 15 max = 20 }
+# 			satellite_naming_policy = lower_case_latin_letters
+# 			flags = { hot_zone }
 
-			change_orbit = @base_moon_distance
+# 			change_orbit = @base_moon_distance
 
-			moon = {
-				count = { min = 0 max = 1 }
-				orbit_angle = { min = 90 max = 270 }
-				orbit_distance = 5
-				flags = { hot_zone }
-			}
-		}
+# 			moon = {
+# 				count = { min = 0 max = 1 }
+# 				orbit_angle = { min = 90 max = 270 }
+# 				orbit_distance = 5
+# 				flags = { hot_zone }
+# 			}
+# 		}
 		
-		planet = {
-			count = { min = 0 max = 1 }
-			orbit_angle = { min = 90 max = 270 }
-			orbit_distance = { min = 20 max = 25 }
-			satellite_naming_policy = lower_case_latin_letters
+# 		planet = {
+# 			count = { min = 0 max = 1 }
+# 			orbit_angle = { min = 90 max = 270 }
+# 			orbit_distance = { min = 20 max = 25 }
+# 			satellite_naming_policy = lower_case_latin_letters
 
-			change_orbit = @base_moon_distance
+# 			change_orbit = @base_moon_distance
 
-			moon = {
-				count = { min = 0 max = 1 }
-				orbit_angle = { min = 90 max = 270 }
-				orbit_distance = 5
-			}
-		}
+# 			moon = {
+# 				count = { min = 0 max = 1 }
+# 				orbit_angle = { min = 90 max = 270 }
+# 				orbit_distance = 5
+# 			}
+# 		}
 		
-		planet = {
-			count = { min = 0 max = 1 }
-			orbit_angle = { min = 90 max = 270 }
-			orbit_distance = { min = 25 max = 30 }
-			satellite_naming_policy = lower_case_latin_letters
+# 		planet = {
+# 			count = { min = 0 max = 1 }
+# 			orbit_angle = { min = 90 max = 270 }
+# 			orbit_distance = { min = 25 max = 30 }
+# 			satellite_naming_policy = lower_case_latin_letters
 
-			change_orbit = @base_moon_distance
+# 			change_orbit = @base_moon_distance
 
-			moon = {
-				count = { min = 0 max = 1 }
-				orbit_angle = { min = 90 max = 270 }
-				orbit_distance = 5
-			}
-		}
+# 			moon = {
+# 				count = { min = 0 max = 1 }
+# 				orbit_angle = { min = 90 max = 270 }
+# 				orbit_distance = 5
+# 			}
+# 		}
 		
-		planet = {
-			count = { min = 0 max = 1 }
-			orbit_angle = { min = 90 max = 270 }
-			orbit_distance = { min = 30 max = 35 }
-			satellite_naming_policy = lower_case_latin_letters
+# 		planet = {
+# 			count = { min = 0 max = 1 }
+# 			orbit_angle = { min = 90 max = 270 }
+# 			orbit_distance = { min = 30 max = 35 }
+# 			satellite_naming_policy = lower_case_latin_letters
 
-			change_orbit = @base_moon_distance
+# 			change_orbit = @base_moon_distance
 
-			moon = {
-				count = { min = 0 max = 1 }
-				orbit_angle = { min = 90 max = 270 }
-				orbit_distance = 5
-			}
-		}
-    }
-}
+# 			moon = {
+# 				count = { min = 0 max = 1 }
+# 				orbit_angle = { min = 90 max = 270 }
+# 				orbit_distance = 5
+# 			}
+# 		}
+#     }
+# }
 
 
 
@@ -1350,7 +1350,7 @@ hostile_init_18 = {
 		class = star
 		orbit_distance = 0
 		orbit_angle = 1
-		size = { min = @standard_min max = @standard_max }
+		size = { min = 0 max = 0 }
 		has_ring = no
 
 		init_effect = {

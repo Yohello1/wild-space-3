@@ -32,7 +32,9 @@ sc_dn = {
 
 
 random_list = {
+	## btw the stars dont need to exist for it to launch  
 	name = "rl_WS_core_stars"  ##include Real Space & Hypothetical stars compatability###
+	
 	stars = {
 		"sc_neutron_star"
 		"sc_pulsar"
