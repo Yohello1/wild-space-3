@@ -1,5 +1,5 @@
 sc_dn = {
-	class = w_star # make custom class to show the wild space in a bit :P
+	class = y_star # make custom class to show the wild space in a bit :P
 	icon = dn_star
 	planet = {
 		key = pc_dn_star
