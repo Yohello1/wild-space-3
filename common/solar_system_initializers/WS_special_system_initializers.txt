@@ -5,21 +5,26 @@ ws_special_init_1 = {
 	
 	usage = misc_system_init
 	usage_odds = {
-    base = 0
-    modifier = {
-            is_inside_nebula = yes
-			add = 1000
-    }
-	modifier = {
-			factor = 0
-			has_star_flag = empire_cluster
+    	base = 50 # base chance the thing can spawn
+
+    	modifier = {
+				is_inside_nebula = yes
+				add = 1000
+		}
+
+		modifier = {
+				factor = 0
+				has_star_flag = empire_cluster
+			}
+		modifier = {
+			
 		}
 	}
 	init_effect = {
 		random_list = { 
 			1 = { add_modifier = { modifier = turbulent_nebula } }
 			2 = { }
-				}
+		}
 	}
 	
 	planet = {
