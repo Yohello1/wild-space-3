@@ -1,0 +1,5 @@
+﻿l_english:
+WS_menu.1.title:0 "Wild Space Menu"
+WS_menu.1.desc:0 " This is the wild space mod menu, and update page \n Updates consist of the core functions being rewritten because the 3.9 update broke a lot of it :P. \n \n Below you can choose whether to enable unstable hyper lanes or not, they do impact performance a significant amount (there is no way to bring the menu back)"
+WS_menu.1.shifting_lanes_performance:0 "Disable shifting lanes"
+WS_menu.1.shifting_lanes_dynamic:0 "Enable shifting lanes"

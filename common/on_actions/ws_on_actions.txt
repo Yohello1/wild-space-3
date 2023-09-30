@@ -1,5 +1,12 @@
 on_game_start = {
 	events = {
 		wild_space.1 # Sets up global flags, and stuff :P
+		wild_space.2 # sets up shifting lanes
+	}
+}
+
+on_bi_yearly_pulse = {
+	events = {
+		ws_shifting.01		# changes hyperlanes
 	}
 }

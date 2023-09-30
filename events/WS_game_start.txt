@@ -3,14 +3,48 @@ namespace = wild_space
 ### sets global flags :3
 event = {
 	id = wild_space.1
-	hide_window = no
+	hide_window = yes
 	is_triggered_only = yes
 
 	immediate = {
 		set_global_flag = has_wild_space_mod
 		# nebula discontinued, use real space instead :P
 		# core will be spun off into its own mod at some point
-		# set_global_flag = WS_shifting_lanes_dynamic # Not done being re-written yet
+		set_global_flag = WS_shifting_lanes_dynamic # Not done being re-written yet
 		set_global_flag = WS_host_not_found
+	}
+}
+
+country_event = {
+	id = wild_space.2
+	hide_window = no
+	title = "WS_menu.1.title"
+	desc = "WS_menu.1.desc"
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_global_flag = WS_host_not_found 
+		is_ai = no
+	}
+
+	# Disable shifting lanes
+	option = {
+
+		name = "WS_menu.1.shifting_lanes_performance"
+		remove_global_flag = shifting_lanes_dynamic
+		remove_global_flag = WS_host_not_found
+		set_global_flag = shifting_lanes_performance
+
+	}
+
+	# enable dynamic lanes
+	option = {
+
+		name = "WS_menu.1.shifting_lanes_dynamic"
+		remove_global_flag = shifting_lanes_performance
+		remove_global_flag = WS_host_not_found
+		set_global_flag = shifting_lanes_dynamic
+
 	}
 }
