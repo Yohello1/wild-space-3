@@ -1,8 +1,8 @@
-namespace = wild_space
+namespace = WS_wild_space
 
 ### sets global flags :3
 event = {
-	id = wild_space.1
+	id = WS_wild_space.1
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -16,7 +16,7 @@ event = {
 }
 
 country_event = {
-	id = wild_space.2
+	id = WS_wild_space.2
 	hide_window = no
 	title = "WS_menu.1.title"
 	desc = "WS_menu.1.desc"

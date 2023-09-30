@@ -1,12 +1,12 @@
 on_game_start = {
 	events = {
-		wild_space.1 # Sets up global flags, and stuff :P
+		WS_wild_space.1 # Sets up global flags, and stuff :P
 	}
 }
 
 on_game_start_country = {
 	events = {
-		wild_space.2		# Run menu
+		WS_wild_space.2		# Run menu
 	}
 }
 

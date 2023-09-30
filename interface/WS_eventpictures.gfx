@@ -1,0 +1,8 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_evt_WS_menu"
+		textureFile = "gfx/event_pictures/WS_menu.dds"
+		alwaystransparent = yes
+	}
+}
