@@ -24,22 +24,18 @@ ws_special_init_1 = {
 	init_effect = {
 		random_list = { 
 			1 = { add_modifier = { modifier = turbulent_nebula } }
-			500 = { ship_speed_reduction = 0.20}
-			5000 = { ship_shield_reduction =  0.5}
-			300 = { ship_hull_regen_add_perc = -0.1 }
-			10 = { ship_speed_reduction = 0.80 }
-			10 = { ship_armor_reduction = 0.5}
-			10 = { }
-
+			500 = {}
 		}
+		prevent_anomaly = yes # why is this an error???
 	}
 	
 	planet = {
 		class = "pc_dn_star"
 		orbit_distance = 0
 		size = { min = 0 max = 0 }	
+		flags = { suppress_archaeological_sites hostile_system } 
 		init_effect = {
-				create_wild_space_effect_A = yes
+				# create_wild_space_effect_A = yes
 				prevent_anomaly = yes 
 				clear_planet_modifiers = yes				
 				}		

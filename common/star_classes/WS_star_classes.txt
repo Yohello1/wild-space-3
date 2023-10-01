@@ -21,13 +21,22 @@ sc_dn = {
 
 	is_environmental_hazard = yes
 	modifier = {
+		random_list = {
+			500 = { add_modifer = { ship_speed_reduction = 0.20} } 
+			5000 = {  add_modifer = {ship_shield_reduction =  0.5}} 
+			300 = {  add_modifer = {ship_hull_regen_add_perc = -0.1 }} 
+			10 = {  add_modifer = {ship_speed_reduction = 0.80 }} 
+			10 = {  add_modifer = {ship_armor_reduction = 0.5}} 
+			10 = { }
+		}
+
 		ship_disengage_chance_reduction = 0.25
 		ship_emergency_ftl_min_days_mult = 0.25
 		ship_speed_reduction = 0.15 # Be careful about using this modifier outside of star classes, it can throw off the ETA for ships
 	}
 	
-	prevent_anomaly = yes # why is this an error???
+	
 
 
-	flags = { suppress_archaeological_sites hostile_system} 
+	flags = { suppress_archaeological_sites hostile_system } 
 }
