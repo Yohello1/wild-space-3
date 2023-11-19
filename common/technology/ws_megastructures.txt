@@ -1,0 +1,17 @@
+ws_tech_stabilisers = {
+	area = engineering
+	cost = 10
+	tier = 5
+	prerequisites = { "tech_starbase_5" "tech_battleships" "tech_zero_point_power" }
+	category = { voidcraft }
+	ai_update_type = all
+	is_rare = yes
+
+	potential = {
+		host_has_dlc = "Utopia"
+	}
+
+	feature_flags = {
+		megaengineering
+	}
+}

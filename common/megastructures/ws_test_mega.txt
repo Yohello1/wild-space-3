@@ -1,5 +1,4 @@
-ws_test_mega =
-{
+ws_test_mega ={
 	entity = "construction_platform_entity"
 	construction_entity = "construction_platform_entity"
 	portrait = "GFX_megastructure_construction_background"
@@ -7,7 +6,7 @@ ws_test_mega =
 	entity_offset = { x = -7 y = -7 }
 	build_time = 5
 
-	prerequisites = { "tech" }
+	prerequisites = { "ws_tech_stabilisers" }
 
 	build_cost = {
 		minerals = 8
