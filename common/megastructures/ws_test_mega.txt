@@ -1,0 +1,16 @@
+ws_test_mega ={
+	entity = "construction_platform_entity"
+	construction_entity = "construction_platform_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -7 y = -7 }
+	build_time = 5
+
+	prerequisites = { "ws_tech_stabilisers" }
+
+	build_cost = {
+		minerals = 8
+		energy = 13
+		influence = 1
+	}
+}

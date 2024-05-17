@@ -26,20 +26,19 @@ ws_special_init_1 = {
 			1 = { add_modifier = { modifier = turbulent_nebula } }
 			500 = {}
 		}
-		prevent_anomaly = yes # why is this an error???
 	}
 	
-	planet = {
-		class = "pc_dn_star"
-		orbit_distance = 0
-		size = { min = 0 max = 0 }	
-		flags = { suppress_archaeological_sites hostile_system } 
-		init_effect = {
-				# create_wild_space_effect_A = yes
-				prevent_anomaly = yes 
-				clear_planet_modifiers = yes				
-				}		
-		}
+	#planet = {
+	#	class = "pc_dn_star"
+	#	orbit_distance = 0
+	#	size = { min = 0 max = 0 }	
+	#	flags = { suppress_archaeological_sites hostile_system } 
+	#	init_effect = {
+	#			# create_wild_space_effect_A = yes
+	#			prevent_anomaly = yes 
+	#			clear_planet_modifiers = yes				
+	#			}		
+	#	}
 	
 	change_orbit = 30
 
