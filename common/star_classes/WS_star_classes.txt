@@ -5,7 +5,7 @@ sc_dn = {
 		key = pc_dn_star
 	}
 	spawn_odds = 5
-	num_planets = {min = 0 max = 0}
+	num_planets = {min = 1 max = 1}
 
 	icon_scale		= 1
 	
