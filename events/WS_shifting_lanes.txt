@@ -54,9 +54,6 @@ event = {
 						has_star_flag = lcluster5
 						has_star_flag = lcluster_lgate
 						has_star_flag = lgateguaranteed
-						# Leviathans
-						has_star_flag = tiyanki_home_system
-						has_star_flag = amoeba_home_system
 						has_star_flag = crystal_system
 						has_star_flag = crystal_splitter_starting_system
 						has_star_flag = crystal_splitter_destination_system
@@ -65,15 +62,6 @@ event = {
 						has_star_flag = hostile_system
 						has_star_flag = guardian
 						has_star_flag = sealed_system
-						# Megastructures
-						has_star_flag = abandoned_gateway
-						has_star_flag = ruined_mega_shipyard_system
-						has_star_flag = ruined_dyson_system
-						has_star_flag = ruined_catapult_system
-						has_star_flag = ruined_nexus_system
-						has_star_flag = ruined_orbital_ring_system
-						has_star_flag = ruined_sentry_system
-						has_star_flag = ruined_ring_system
 						# Others
 						has_star_flag = mechanocalibrator_system
 						has_star_flag = rubricator_system
