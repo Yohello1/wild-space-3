@@ -1,0 +1,11 @@
+# A random guy on steam said I need place this here, and add the sc_dn stuff
+
+can_spawn_astral_rift_natural_generation = {
+	NOR = {
+		starting_system = yes
+		is_fe_cluster = yes
+		is_star_class = sc_dn
+		has_special_star_flag_trigger = yes
+	}
+	can_spawn_astral_rift = yes
+}
