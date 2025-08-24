@@ -5,4 +5,10 @@ spriteTypes = {
 		textureFile = "gfx/event_pictures/WS_menu.dds"
 		alwaystransparent = yes
 	}
+
+	spriteType = {
+		name = "GFX_evt_WS_astral"
+		textureFile = "gfx/event_pictures/WS_threads.dds"
+		alwaystransparent = yes
+	}
 }

@@ -16,9 +16,6 @@ ws_special_init_1 = {
 				factor = 0
 				has_star_flag = empire_cluster
 			}
-		modifier = {
-			
-		}
 	}
 
 	init_effect = {

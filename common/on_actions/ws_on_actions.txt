@@ -7,11 +7,13 @@ on_game_start = {
 on_game_start_country = {
 	events = {
 		WS_wild_space.2		# Run menu
+		WS_wild_space.3 	# Run astral menu
 	}
 }
 
 on_bi_yearly_pulse = {
 	events = {
 		ws_shifting_lanes.01		# changes hyperlanes
+		ws_astral.01
 	}
 }

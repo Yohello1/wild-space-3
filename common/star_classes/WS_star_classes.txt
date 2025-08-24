@@ -18,6 +18,7 @@ sc_dn = {
 	pc_arctic		= { spawn_odds = 0.0 }
 	pc_alpine		= { spawn_odds = 0.0 }
 	pc_savannah		= { spawn_odds = 0.0 }
+	pc_astral_scar  = { spawn_odds = 0.0 } # No idea if this actually works lol
 
 	is_environmental_hazard = yes
 	modifier = {

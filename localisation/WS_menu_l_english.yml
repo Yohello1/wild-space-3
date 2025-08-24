@@ -1,5 +1,10 @@
 ﻿l_english:
 WS_menu.1.title:0 "Wild Space Menu"
-WS_menu.1.desc:0 " This is the wild space mod menu, and update page \n Updates consist of the core functions being rewritten because the 3.9 update broke a lot of it :P. \n \n Below you can choose whether to enable unstable hyper lanes or not, they do impact performance a significant amount (there is no way to bring the menu back)"
+WS_menu.1.desc:0 " Bob is the wild space mod menu, and update page \n Updates consist of the core functions being rewritten because the 3.9 update broke a lot of it :P. \n \n Below you can choose whether to enable unstable hyper lanes or not, they do impact performance a significant amount (there is no way to bring the menu back)"
 WS_menu.1.shifting_lanes_performance:0 "Disable shifting lanes"
 WS_menu.1.shifting_lanes_dynamic:0 "Enable shifting lanes"
+
+WS_menu.2.title:0 "Wild Space Astral Threads Options"
+WS_menu.2.desc:0 "Can choose whether you want astral threads in the wild space systems below"
+WS_menu.2.enable:0 "Enable Astral threads in wild space systems"
+WS_menu.2.disable:0 "Disable Astral threads in wild space systems"

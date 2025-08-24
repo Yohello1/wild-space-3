@@ -1,0 +1,42 @@
+namespace = ws_astral
+
+# Not being used
+event = {
+    id = ws_astral.01
+
+    is_triggered_only = yes
+    hide_window = yes
+
+    trigger = {
+        always = yes
+    }
+
+    immediate = {
+        every_galaxy_planet = {
+            limit = { is_planet_class = pc_rift_star }
+            remove_planet = yes
+        }
+    }
+
+}
+
+country_event = {
+    id = ws_astral.02
+    is_triggered_only = yes
+    hide_window = yes
+
+    log = "hij"
+
+    immediate = {
+        every_galaxy_planet = {
+            limit = { 
+                is_planet_class = pc_astral_scar
+                # parent = { is_star_class = sc_dn }  # Only planets whose parent star is DN-class
+                solar_system = {
+                    is_star_class = sc_dn
+                }
+            }
+            remove_planet = yes
+        }
+    }
+}
